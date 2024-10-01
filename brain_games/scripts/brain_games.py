@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 from ..cli import welcome_user
 
-def main()->None:
+
+def main() -> None:
     welcome_user()
 
-if __name__=='__main__':
-    main()
 
+if __name__ == '__main__':
+    main()
