@@ -2,7 +2,16 @@
 import prompt
 
 
-def welcome_user() -> None:
+def get_username() -> str:
     name = prompt.string('May I have your name ? ')
+    return name
+
+
+def greeting_user(name: str) -> None:
     print('Welcome to the Brain Games!')
     print(f'Hello, {name}!')
+
+
+def welcome_user() -> None:
+    name = get_username()
+    greeting_user(name)
