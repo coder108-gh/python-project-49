@@ -1,8 +1,6 @@
 #!usr/bin/env python3
 from random import randint
-import prompt
-from ..cli import get_username
-from ..cli import greeting_user
+from ..cli import play_game
 
 
 def get_rnd_num(att_cnt=3, low=1, up=100) -> list:
@@ -12,30 +10,21 @@ def get_rnd_num(att_cnt=3, low=1, up=100) -> list:
     return numbers
 
 
-def is_correct_ans(num: int) -> bool:
-    correct_ans = 'yes'
-    if num % 2 != 0:
-        correct_ans = 'no'
-
-    print(f'Question: {num}')
-    ans = prompt.string('Your answer: ')
-    if ans == correct_ans:
-        print('Correct!')
-        return True
-    print(f"'{ans}' is wrong answer ;(. Correct answer was '{correct_ans}'.")
-    return False
+def get_tasks(task_count=3, low=1, up=100) -> list:
+    tasks = []
+    for _ in range(task_count):
+        num = randint(low, up)
+        correct_ans = 'yes'
+        if num % 2 != 0:
+            correct_ans = 'no'
+        tasks.append((num, correct_ans))
+    return tasks
 
 
 def main() -> None:
-    name = get_username()
-    greeting_user(name)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    numbers = get_rnd_num()
-    for num in numbers:
-        if not is_correct_ans(num):
-            print(f"Let's try again, {name}!")
-            return
-    print(f'Congratulations, {name}!')
+    GAME_TEXT = 'Answer "yes" if the number is even, otherwise answer "no".'
+    tasks = get_tasks()
+    play_game(GAME_TEXT, tasks)
 
 
 if __name__ == "__main__":
