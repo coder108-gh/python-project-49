@@ -5,18 +5,18 @@
 This is a learning project in python - brain-games.
 
 # How To Install
-After downloading, enter the following commands: \n
-make build \n
-make publish\n
-make package-install
+After downloading, enter the following commands:  
+make build  
+make publish  
+make package-install  
 
 # How To Use
-To play the game, enter one of the commands:
-brain-even
-brain-calc
-brain-gcd
-brain-progression
-brain-prime
+To play the game, enter one of the commands:  
+brain-even  
+brain-calc  
+brain-gcd  
+brain-progression  
+brain-prime  
 
 
 ### ASCIINEMA
