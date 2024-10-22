@@ -5,9 +5,9 @@
 This is a learning project in python - brain-games.
 
 # How To Install
-After downloading, enter the following commands:
-make build
-make publish
+After downloading, enter the following commands: \n
+make build \n
+make publish\n
 make package-install
 
 # How To Use
