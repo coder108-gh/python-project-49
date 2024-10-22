@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "This is a learning project in python - brain-games"
+authors = ["Eugene Kuzmin <coder108@gmail.com>"]
 readme = "README.md"
 packages = [ { include = "brain_games"  }, ]
 
@@ -24,3 +24,6 @@ flake8 = "^7.1.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+repository = "https://github.com/coder108-gh/python-project-49"

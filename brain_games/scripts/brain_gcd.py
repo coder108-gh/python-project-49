@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 from random import randint
-from ..cli import play_game
+from .brain_common import play_game
 
 
 def gcd(a, b):

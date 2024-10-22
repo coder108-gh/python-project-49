@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 from random import randint
 from random import choice
-from ..cli import play_game
+from .brain_common import play_game
 
 
 def get_progression(min_len=5, max_len=10, min_start=1, max_start=20,

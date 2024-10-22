@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 from random import randint
 from random import choice
-from ..cli import play_game
+from .brain_common import play_game
 
 
 def calc_result(op: str, num1: int, num2: int) -> int:

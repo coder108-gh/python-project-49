@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 from random import randint
-from ..cli import play_game
+from .brain_common import play_game
 
 
 def get_rnd_num(att_cnt=3, low=1, up=100) -> list:

@@ -2,6 +2,23 @@
 [![Actions Status](https://github.com/coder108-gh/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/coder108-gh/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2bdced7337f6c88aff2f/maintainability)](https://codeclimate.com/github/coder108-gh/python-project-49/maintainability)
 
+This is a learning project in python - brain-games.
+
+# How To Install
+After downloading, enter the following commands:
+make build
+make publish
+make package-install
+
+# How To Use
+To play the game, enter one of the commands:
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
+
+
 ### ASCIINEMA
 ## install and brain-even
 [![asciicast](https://asciinema.org/a/H0uTHPSNUBrJT2oxeIFM4Gnr5.svg)](https://asciinema.org/a/H0uTHPSNUBrJT2oxeIFM4Gnr5)
