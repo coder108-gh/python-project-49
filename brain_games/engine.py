@@ -1,6 +1,6 @@
 #!usr/bin/env python3
+from .cli import get_username, greeting_user
 import prompt
-from ..cli import get_username, greeting_user
 
 
 def play_round(question, correct_ans) -> bool:
